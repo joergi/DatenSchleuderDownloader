@@ -12,9 +12,7 @@ Clone the git repository
 Download all issues:
   `sh datenschleuder_download.sh`
 
-the following issues are only available as HTML under this link:
+Some issues are only available as HTML under this link:
 http://www.offiziere.ch/trust-us/ds/
-#1, #8,5, #17, #18, #19, #20, #21, #21, #22, #23, #24, #25, #26/27, #28/29 #49, #50, #51, #52, #54, #55,
 
 this script is under GNU GENERAL PUBLIC LICENSE 
-
