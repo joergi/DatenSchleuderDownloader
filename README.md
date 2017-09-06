@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/joergi/DatenSchleuderDownloader.svg?branch=master)](https://travis-ci.org/joergi/DatenSchleuderDownloader)
 # DatenSchleuderDownloader
 Downloads all the Datenschleuder from the Chaos Computer Club     
 You can download the issues directly here: http://ds.ccc.de/download.html
@@ -10,7 +11,7 @@ Clone the git repository
   `git clone https://github.com/joergi77/DatenSchleuderDownloader.git`
   
 Download all issues:
-  `sh datenschleuder_download.sh`
+  `bash datenschleuder_download.sh`
 
 Some issues are only available as HTML under this link:
 http://www.offiziere.ch/trust-us/ds/
