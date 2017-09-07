@@ -18,6 +18,7 @@ USAGE="Usage: bash datenschleuder_download.sh"
 if [ ! -d "issues" ]; then
  mkdir issues
 fi
+
 wget http://ds.ccc.de/pdfs/ds096.pdf -P issues/
 wget http://ds.ccc.de/pdfs/ds095.pdf -P issues/
 wget http://ds.ccc.de/pdfs/ds094.pdf -P issues/
