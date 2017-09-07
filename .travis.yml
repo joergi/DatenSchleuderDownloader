@@ -1,4 +1,3 @@
 language: bash
-
 script:
 - bash datenschleuder_download.sh
