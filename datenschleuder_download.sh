@@ -12,8 +12,8 @@
 #          this script is under GNU GENERAL PUBLIC LICENSE 
 # ------------------------------------------------------------------
 
-VERSION=0.1.1
-USAGE="Usage: bash datenschleuder_download.sh"
+# VERSION=0.1.1
+# USAGE="Usage: bash datenschleuder_download.sh"
 
 if [ ! -d "issues" ]; then
  mkdir issues
