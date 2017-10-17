@@ -16,9 +16,7 @@
 # ------------------------------------------------------------------
 
 # VERSION=0.1.1
-# USAGE="Usage: bash datenschleuder_download.sh"
-
-
+# USAGE="Usage: bash datenschleuder_download.ps1"
 
 
 
@@ -41,7 +39,7 @@ try
 	{
 	    Write-Host $env:appdata
 	    Write-Host $issue
-	    $web.DownloadFile($fileUrl, "$PSScriptRoot\datenschleuder_issues\\$issue")
+	    $web.DownloadFile($issue, "$PSScriptRoot\datenschleuder_issues\\$issue")
 	} Catch
 	{
 	    Write-Host "Ocorred an error trying download " + $file
