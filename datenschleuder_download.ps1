@@ -41,9 +41,7 @@ try
 	    Write-Host $issue
 
 	    $issue_name = $issue
-	    $issue_name.Replace("https://ds.ccc.de/pdfs/","")
-
-	    $issue_name
+	    $issue_name = $issue_name.Replace("https://ds.ccc.de/pdfs/","")
 
 	    $web.DownloadFile($issue, "$PSScriptRoot\datenschleuder_issues\\$issue_name")
 	} Catch
