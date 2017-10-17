@@ -10,8 +10,12 @@ more infos about the Choas Computer Club: https://ccc.de
 Clone the git repository
   `git clone https://github.com/joergi77/DatenSchleuderDownloader.git`
   
-Download all issues:
+Download all issues on Windows
+  `./datenschleuder_download.ps1`
+
+Download all issues on Linux or Mac
   `bash datenschleuder_download.sh`
+
 
 Some issues are only available as HTML under this link:
 https://www.offiziere.ch/trust-us/ds/
