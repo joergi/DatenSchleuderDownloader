@@ -39,7 +39,13 @@ try
 	{
 	    Write-Host $env:appdata
 	    Write-Host $issue
-	    $web.DownloadFile($issue, "$PSScriptRoot\datenschleuder_issues\\x.pdf")
+
+	    $issue_name = $issue
+	    $issue_name.Replace("https://ds.ccc.de/pdfs/","")
+
+	    $issue_name
+
+	    $web.DownloadFile($issue, "$PSScriptRoot\datenschleuder_issues\\$issue_name)
 	} Catch
 	{
 	    Write-Host "Ocorred an error trying download " + $issue
