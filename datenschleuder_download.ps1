@@ -39,10 +39,10 @@ try
 	{
 	    Write-Host $env:appdata
 	    Write-Host $issue
-	    $web.DownloadFile($issue, "$PSScriptRoot\datenschleuder_issues\\$issue")
+	    $web.DownloadFile($issue, "$PSScriptRoot\datenschleuder_issues\\x.pdf")
 	} Catch
 	{
-	    Write-Host "Ocorred an error trying download " + $file
+	    Write-Host "Ocorred an error trying download " + $issue
 	}
 }
 

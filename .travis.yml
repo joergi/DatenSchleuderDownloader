@@ -3,7 +3,7 @@ matrix:
 #  - language: bash
 #    script:
 #    - bash datenschleuder_download.sh
-  - language: bash
+  - language: sh
     services:
       - docker
     script:
