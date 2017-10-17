@@ -45,7 +45,7 @@ try
 
 	    $issue_name
 
-	    $web.DownloadFile($issue, "$PSScriptRoot\datenschleuder_issues\\"+$issue_name)
+	    $web.DownloadFile($issue, "$PSScriptRoot\datenschleuder_issues\\$issue_name")
 	} Catch
 	{
 	    Write-Host "Ocorred an error trying download " + $issue
