@@ -48,7 +48,7 @@ try
 	} Catch
 	{
 	    Write-Host "Ocorred an error trying download " + $issue +" - with name "+ $issue_name
-            $ErrorActionPreference = "Stop"
+            exit 1
 	}
 }
 
