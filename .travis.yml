@@ -1,8 +1,8 @@
 matrix:
   include:
-#  - language: bash
-#    script:
-#    - bash datenschleuder_download.sh
+  - language: bash
+    script:
+    - bash datenschleuder_download.sh
   - language: sh
     services:
       - docker
