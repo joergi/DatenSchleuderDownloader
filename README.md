@@ -8,7 +8,7 @@ You will always get the DatenSchleuder for free, if you join the Chaos Computer 
 more infos about the Choas Computer Club: https://ccc.de
 
 Clone the git repository
-  `git clone https://github.com/joergi77/DatenSchleuderDownloader.git`
+  `git clone https://github.com/joergi/DatenSchleuderDownloader.git`
   
 Download all issues on Windows
   `./datenschleuder_download.ps1`

@@ -8,4 +8,4 @@ matrix:
       - docker
     script:
       - docker pull microsoft/powershell
-      - docker run -v $(pwd):/data microsoft/powershell /bin/sh -c "cd /data; chmod +x *.ps1; powershell ./datenschleuder_download.ps1"
+      - docker run -v $(pwd):/data microsoft/powershell /bin/sh -c "cd /data; chmod +x *.ps1; pwsh ./datenschleuder_download.ps1"
