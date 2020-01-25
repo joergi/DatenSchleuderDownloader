@@ -12,13 +12,16 @@
 #          this script is under GNU GENERAL PUBLIC LICENSE 
 # ------------------------------------------------------------------
 
-# VERSION=0.1.1
+# VERSION=0.1.2
 # USAGE="Usage: bash datenschleuder_download.sh"
 
 if [ ! -d "issues" ]; then
  mkdir issues
 fi
 
+wget https://ds.ccc.de/pdfs/ds099.pdf -P issues/
+wget https://ds.ccc.de/pdfs/ds098.pdf -P issues/
+wget https://ds.ccc.de/pdfs/ds097.pdf -P issues/
 wget https://ds.ccc.de/pdfs/ds096.pdf -P issues/
 wget https://ds.ccc.de/pdfs/ds095.pdf -P issues/
 wget https://ds.ccc.de/pdfs/ds094.pdf -P issues/

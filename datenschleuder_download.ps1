@@ -28,6 +28,10 @@ if( -Not (Test-Path -Path "datenschleuder_issues" ) )
 
 $datenschleuder_issues = @(
 	
+
+	"https://ds.ccc.de/pdfs/ds099.pdf",
+	"https://ds.ccc.de/pdfs/ds098.pdf",
+	"https://ds.ccc.de/pdfs/ds097.pdf",
 	"https://ds.ccc.de/pdfs/ds096.pdf",
 	"https://ds.ccc.de/pdfs/ds095.pdf",
 	"https://ds.ccc.de/pdfs/ds094.pdf",
