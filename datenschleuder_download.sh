@@ -15,80 +15,85 @@
 # VERSION=0.1.2
 # USAGE="Usage: bash datenschleuder_download.sh"
 
-if [ ! -d "issues" ]; then
- mkdir issues
+OUTDIR=issues
+
+if [ ! -d "$OUTDIR" ]; then
+ mkdir $OUTDIR
 fi
 
-wget https://ds.ccc.de/pdfs/ds099.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds098.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds097.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds096.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds095.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds094.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds093.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds092.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds091.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds090.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds089.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds088.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds087.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds086.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds085.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds084.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds083.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds082.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds081.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds079.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds078.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds077.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds076.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds075.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds074.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds073.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds072.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds071.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds070.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds067.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds066.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds065.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds064.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds063.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds062.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds061.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds060.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds059.pdf -P issues/
-wget https://chaosradio.ccc.de/media/ds/ds058.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds057.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds056.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds053.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds048.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds047.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds046.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds045.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds044,5.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds044.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds043.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds042.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds041.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds040.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds039.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds038.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds037.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds036.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds035.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds034.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds033.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds032.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds031.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds030.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds016.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds015.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds014.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds013.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds1112.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds0910.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds008.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds007.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds0506.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds004.pdf -P issues/
-wget https://ds.ccc.de/pdfs/ds003.pdf -P issues/
+wget -N https://ds.ccc.de/pdfs/ds101.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds100.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds099.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds098.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds097.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds096.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds095.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds094.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds093.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds092.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds091.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds090.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds089.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds088.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds087.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds086.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds085.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds084.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds083.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds082.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds081.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds079.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds078.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds077.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds076.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds075.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds074.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds073.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds072.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds071.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds070.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds067.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds066.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds065.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds064.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds063.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds062.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds061.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds060.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds059.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds058.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds057.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds056.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds053.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds048.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds047.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds046.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds045.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds044,5.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds044.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds043.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds042.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds041.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds040.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds039.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds038.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds037.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds036.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds035.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds034.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds033.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds032.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds031.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds030.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds016.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds015.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds014.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds013.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds1112.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds0910.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds008.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds007.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds0506.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds004.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds003.pdf -P $OUTDIR
+wget -N https://ds.ccc.de/pdfs/ds002.pdf -P $OUTDIR
