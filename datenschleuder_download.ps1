@@ -38,36 +38,36 @@ $datenschleuder_issues = @(
 	"https://ds.ccc.de/pdfs/ds093.pdf",
 	"https://ds.ccc.de/pdfs/ds092.pdf",
 	"https://ds.ccc.de/pdfs/ds091.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds090.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds089.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds088.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds087.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds086.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds085.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds084.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds083.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds082.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds081.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds079.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds078.pdf",
+	"https://ds.ccc.de/pdfs/ds090.pdf",
+	"https://ds.ccc.de/pdfs/ds089.pdf",
+	"https://ds.ccc.de/pdfs/ds088.pdf",
+	"https://ds.ccc.de/pdfs/ds087.pdf",
+	"https://ds.ccc.de/pdfs/ds086.pdf",
+	"https://ds.ccc.de/pdfs/ds085.pdf",
+	"https://ds.ccc.de/pdfs/ds084.pdf",
+	"https://ds.ccc.de/pdfs/ds083.pdf",
+	"https://ds.ccc.de/pdfs/ds082.pdf",
+	"https://ds.ccc.de/pdfs/ds081.pdf",
+	"https://ds.ccc.de/pdfs/ds079.pdf",
+	"https://ds.ccc.de/pdfs/ds078.pdf",
 	"https://ds.ccc.de/pdfs/ds077.pdf",
 	"https://ds.ccc.de/pdfs/ds076.pdf",
 	"https://ds.ccc.de/pdfs/ds075.pdf",
 	"https://ds.ccc.de/pdfs/ds074.pdf",
 	"https://ds.ccc.de/pdfs/ds073.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds072.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds071.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds070.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds067.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds066.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds065.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds064.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds063.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds062.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds061.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds060.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds059.pdf",
-	"https://chaosradio.ccc.de/media/ds/ds058.pdf",
+	"https://ds.ccc.de/pdfs/ds072.pdf",
+	"https://ds.ccc.de/pdfs/ds071.pdf",
+	"https://ds.ccc.de/pdfs/ds070.pdf",
+	"https://ds.ccc.de/pdfs/ds067.pdf",
+	"https://ds.ccc.de/pdfs/ds066.pdf",
+	"https://ds.ccc.de/pdfs/ds065.pdf",
+	"https://ds.ccc.de/pdfs/ds064.pdf",
+	"https://ds.ccc.de/pdfs/ds063.pdf",
+	"https://ds.ccc.de/pdfs/ds062.pdf",
+	"https://ds.ccc.de/pdfs/ds061.pdf",
+	"https://ds.ccc.de/pdfs/ds060.pdf",
+	"https://ds.ccc.de/pdfs/ds059.pdf",
+	"https://ds.ccc.de/pdfs/ds058.pdf",
 	"https://ds.ccc.de/pdfs/ds057.pdf",
 	"https://ds.ccc.de/pdfs/ds056.pdf",
 	"https://ds.ccc.de/pdfs/ds053.pdf",
@@ -101,7 +101,8 @@ $datenschleuder_issues = @(
 	"https://ds.ccc.de/pdfs/ds007.pdf",
 	"https://ds.ccc.de/pdfs/ds0506.pdf",
 	"https://ds.ccc.de/pdfs/ds004.pdf",
-	"https://ds.ccc.de/pdfs/ds003.pdf"
+	"https://ds.ccc.de/pdfs/ds003.pdf",
+	"https://ds.ccc.de/pdfs/ds002.pdf"
 	
 )
 
@@ -116,7 +117,7 @@ try
 
 	    $issue_name = $issue
 	    $issue_name = $issue_name.Replace("https://ds.ccc.de/pdfs/","")
-	    $issue_name = $issue_name.Replace("https://chaosradio.ccc.de/media/ds/","")
+	    $issue_name = $issue_name.Replace( "https/ds.ccc.de/pdfs/","")
 	    $issue_name = $issue_name.Replace(",","_")
 
 	    $web.DownloadFile($issue, "$PSScriptRoot\datenschleuder_issues\\$issue_name")
